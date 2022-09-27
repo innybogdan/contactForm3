@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form</title>
+    <link rel="stylesheet" href="css/cform.css">
+</head>
+
+<body>
+    <div id="container-form">
+        
+        <h4>Skontaktuj się ze mną.</h4>
+        <p>Pozdrawiam bc. Dziękuję :).</p>
+
+        <form id="contactform" action="https://formsubmit.io/send/innybogdance@gmail.com" method="POST">
+
+            <div class="name">
+                <label for="firstname"></label>
+                <input type="text" placeholder="Imię" name="firstname" id="firstname" required>
+            </div>
+            <div class="name">
+                <label for="secondname"></label>
+                <input type="text" placeholder="Nazwisko" name="secondname" id="secondname" required>
+            </div>
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="E-mail" name="email" id="email" required>
+            </div>
+            <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Wiadomość" id="message" cols="30" rows="5"
+                    required></textarea>
+            </div>
+
+            <input name="_redirect" type="hidden" id="name" value="https://your website url">
+            <input name="_formsubmit_id" type="text" style="display:none">
+            
+            <div class="submit">
+                <input type="submit" value="Wyślij" id="form_button" />
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+</html>
